@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9bc2345347f143212f243aedd9676f40 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9bc2345347f143212f243aedd9676f40" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9bc2345347f143212f243aedd9676f40 = L.map(
+                "map_9bc2345347f143212f243aedd9676f40",
+                {
+                    center: [38.85, -77.22],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_029d08c93e594629bfc1cef7c98324ff = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_029d08c93e594629bfc1cef7c98324ff.addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+            var circle_marker_e2aa083232d080f03374ce8724182ad5 = L.circleMarker(
+                [38.8303, -77.198],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.973333333333333, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_0b51ac6f141523faa9d699804749ee59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d8dffbb03c67c22da97057a343a993d = $(`<div id="html_8d8dffbb03c67c22da97057a343a993d" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22101</b><br>Area: McLean<br>60+ Population: 5,800<br>Disability: 2,540<br>Market Score: 4496<br>Priority: Critical<br>Median Income: $180,000<br>Housing: Affluent/Estate</div>`)[0];
+                popup_0b51ac6f141523faa9d699804749ee59.setContent(html_8d8dffbb03c67c22da97057a343a993d);
+            
+        
+
+        circle_marker_e2aa083232d080f03374ce8724182ad5.bindPopup(popup_0b51ac6f141523faa9d699804749ee59)
+        ;
+
+        
+    
+    
+            circle_marker_e2aa083232d080f03374ce8724182ad5.bindTooltip(
+                `<div>
+                     22101 - McLean
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_735499c9a4a3626b60e4cd0a89ab53da = L.circleMarker(
+                [38.7934, -77.2853],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.88, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_941f52860df1eb8f95c082c8aff3c05e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf3d9bdc70b64f3c41418c892c064ff7 = $(`<div id="html_bf3d9bdc70b64f3c41418c892c064ff7" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22180</b><br>Area: Vienna<br>60+ Population: 5,200<br>Disability: 2,280<br>Market Score: 4032<br>Priority: Critical<br>Median Income: $120,000<br>Housing: Affluent suburban</div>`)[0];
+                popup_941f52860df1eb8f95c082c8aff3c05e.setContent(html_bf3d9bdc70b64f3c41418c892c064ff7);
+            
+        
+
+        circle_marker_735499c9a4a3626b60e4cd0a89ab53da.bindPopup(popup_941f52860df1eb8f95c082c8aff3c05e)
+        ;
+
+        
+    
+    
+            circle_marker_735499c9a4a3626b60e4cd0a89ab53da.bindTooltip(
+                `<div>
+                     22180 - Vienna
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e2c5090e1ffde0da68170eb1eca3ac0 = L.circleMarker(
+                [38.8956, -77.22],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.333333333333332, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_212bec7cc7d1eea2e52a47966e8c5159 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c13390b435838f24e5c3035ad4a27b6 = $(`<div id="html_3c13390b435838f24e5c3035ad4a27b6" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22181</b><br>Area: Vienna<br>60+ Population: 4,900<br>Disability: 2,150<br>Market Score: 3800<br>Priority: High<br>Median Income: $110,000<br>Housing: Suburban</div>`)[0];
+                popup_212bec7cc7d1eea2e52a47966e8c5159.setContent(html_3c13390b435838f24e5c3035ad4a27b6);
+            
+        
+
+        circle_marker_0e2c5090e1ffde0da68170eb1eca3ac0.bindPopup(popup_212bec7cc7d1eea2e52a47966e8c5159)
+        ;
+
+        
+    
+    
+            circle_marker_0e2c5090e1ffde0da68170eb1eca3ac0.bindTooltip(
+                `<div>
+                     22181 - Vienna
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74719d0a70be3e5110a4175675e9c0d2 = L.circleMarker(
+                [38.8462, -77.3064],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.333333333333332, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_f8c747bc340f0c432a71218f7dc8e9bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c7e327e39d94c7a3ba04c1b7d1c8090 = $(`<div id="html_2c7e327e39d94c7a3ba04c1b7d1c8090" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22102</b><br>Area: McLean<br>60+ Population: 4,900<br>Disability: 2,150<br>Market Score: 3800<br>Priority: High<br>Median Income: $145,000<br>Housing: Affluent suburban</div>`)[0];
+                popup_f8c747bc340f0c432a71218f7dc8e9bb.setContent(html_2c7e327e39d94c7a3ba04c1b7d1c8090);
+            
+        
+
+        circle_marker_74719d0a70be3e5110a4175675e9c0d2.bindPopup(popup_f8c747bc340f0c432a71218f7dc8e9bb)
+        ;
+
+        
+    
+    
+            circle_marker_74719d0a70be3e5110a4175675e9c0d2.bindTooltip(
+                `<div>
+                     22102 - McLean
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7276830975b685c81b7c00a4fc5e149 = L.circleMarker(
+                [38.8625, -77.35],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.826666666666668, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_5a36c275c3e438c39dbdf663b36bf4c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7956d1918c4df8ad8318f687dd06fa48 = $(`<div id="html_7956d1918c4df8ad8318f687dd06fa48" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22046</b><br>Area: Falls Church<br>60+ Population: 4,800<br>Disability: 2,110<br>Market Score: 3724<br>Priority: High<br>Median Income: $115,000<br>Housing: Dense suburban</div>`)[0];
+                popup_5a36c275c3e438c39dbdf663b36bf4c3.setContent(html_7956d1918c4df8ad8318f687dd06fa48);
+            
+        
+
+        circle_marker_a7276830975b685c81b7c00a4fc5e149.bindPopup(popup_5a36c275c3e438c39dbdf663b36bf4c3)
+        ;
+
+        
+    
+    
+            circle_marker_a7276830975b685c81b7c00a4fc5e149.bindTooltip(
+                `<div>
+                     22046 - Falls Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1e32e86e1de3360fdfa02e333d81ccc2 = L.circleMarker(
+                [38.8301, -77.2731],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.786666666666665, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_f8e3cf3c3b4be8b11d38653bdd61ceb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_930af8e5115bff72e5d6c72ace615eef = $(`<div id="html_930af8e5115bff72e5d6c72ace615eef" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22182</b><br>Area: Vienna<br>60+ Population: 4,600<br>Disability: 2,020<br>Market Score: 3568<br>Priority: High<br>Median Income: $125,000<br>Housing: Affluent suburban</div>`)[0];
+                popup_f8e3cf3c3b4be8b11d38653bdd61ceb5.setContent(html_930af8e5115bff72e5d6c72ace615eef);
+            
+        
+
+        circle_marker_1e32e86e1de3360fdfa02e333d81ccc2.bindPopup(popup_f8e3cf3c3b4be8b11d38653bdd61ceb5)
+        ;
+
+        
+    
+    
+            circle_marker_1e32e86e1de3360fdfa02e333d81ccc2.bindTooltip(
+                `<div>
+                     22182 - Vienna
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d0cac2bc7858986100879109ca3e5ae = L.circleMarker(
+                [38.8456, -77.29],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.28, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_c26ebd402385ad21f4d7582a3c10aedd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_179c3dab5da81aa6dd75ce0b975da4d4 = $(`<div id="html_179c3dab5da81aa6dd75ce0b975da4d4" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22041</b><br>Area: Falls Church<br>60+ Population: 4,500<br>Disability: 1,980<br>Market Score: 3492<br>Priority: High<br>Median Income: $98,000<br>Housing: Dense suburban</div>`)[0];
+                popup_c26ebd402385ad21f4d7582a3c10aedd.setContent(html_179c3dab5da81aa6dd75ce0b975da4d4);
+            
+        
+
+        circle_marker_7d0cac2bc7858986100879109ca3e5ae.bindPopup(popup_c26ebd402385ad21f4d7582a3c10aedd)
+        ;
+
+        
+    
+    
+            circle_marker_7d0cac2bc7858986100879109ca3e5ae.bindTooltip(
+                `<div>
+                     22041 - Falls Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ff835e1c9f5791b6f8c2f2201ef3a300 = L.circleMarker(
+                [38.7629, -77.2897],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.733333333333334, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_c330b261fe139952784a705bdc892a92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af37b2a8e3b62071548df28ef8965bc1 = $(`<div id="html_af37b2a8e3b62071548df28ef8965bc1" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22003</b><br>Area: Annandale<br>60+ Population: 4,200<br>Disability: 1,850<br>Market Score: 3260<br>Priority: High<br>Median Income: $78,000<br>Housing: Dense suburban</div>`)[0];
+                popup_c330b261fe139952784a705bdc892a92.setContent(html_af37b2a8e3b62071548df28ef8965bc1);
+            
+        
+
+        circle_marker_ff835e1c9f5791b6f8c2f2201ef3a300.bindPopup(popup_c330b261fe139952784a705bdc892a92)
+        ;
+
+        
+    
+    
+            circle_marker_ff835e1c9f5791b6f8c2f2201ef3a300.bindTooltip(
+                `<div>
+                     22003 - Annandale
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7954a8ffed40d54eb13fa28e0ef9a413 = L.circleMarker(
+                [38.8607, -77.1147],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.706666666666667, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_0164160f18775e86ec1065f5fd4e79ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c41466dc30d45a0d6de0e03fe51df32e = $(`<div id="html_c41466dc30d45a0d6de0e03fe51df32e" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22042</b><br>Area: Falls Church<br>60+ Population: 4,200<br>Disability: 1,840<br>Market Score: 3256<br>Priority: High<br>Median Income: $105,000<br>Housing: Dense suburban</div>`)[0];
+                popup_0164160f18775e86ec1065f5fd4e79ee.setContent(html_c41466dc30d45a0d6de0e03fe51df32e);
+            
+        
+
+        circle_marker_7954a8ffed40d54eb13fa28e0ef9a413.bindPopup(popup_0164160f18775e86ec1065f5fd4e79ee)
+        ;
+
+        
+    
+    
+            circle_marker_7954a8ffed40d54eb13fa28e0ef9a413.bindTooltip(
+                `<div>
+                     22042 - Falls Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ad0dd157323b6de20de7e2ef577ed6c = L.circleMarker(
+                [38.8545, -77.152],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.2, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_f29b311e3d17473eb114f48c74892973 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7dfad96977b152cd538648852be3edfc = $(`<div id="html_7dfad96977b152cd538648852be3edfc" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22124</b><br>Area: Oakton<br>60+ Population: 4,100<br>Disability: 1,800<br>Market Score: 3180<br>Priority: High<br>Median Income: $115,000<br>Housing: Suburban</div>`)[0];
+                popup_f29b311e3d17473eb114f48c74892973.setContent(html_7dfad96977b152cd538648852be3edfc);
+            
+        
+
+        circle_marker_2ad0dd157323b6de20de7e2ef577ed6c.bindPopup(popup_f29b311e3d17473eb114f48c74892973)
+        ;
+
+        
+    
+    
+            circle_marker_2ad0dd157323b6de20de7e2ef577ed6c.bindTooltip(
+                `<div>
+                     22124 - Oakton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_125559b768faf51afa044610727b846c = L.circleMarker(
+                [38.8505, -77.1697],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.2, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_ceadbad3994b55e4753cacb310b61448 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82c39cdefc5abab04e1f4699e1120b8d = $(`<div id="html_82c39cdefc5abab04e1f4699e1120b8d" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22030</b><br>Area: Fairfax<br>60+ Population: 4,100<br>Disability: 1,800<br>Market Score: 3180<br>Priority: High<br>Median Income: $82,000<br>Housing: Urban center</div>`)[0];
+                popup_ceadbad3994b55e4753cacb310b61448.setContent(html_82c39cdefc5abab04e1f4699e1120b8d);
+            
+        
+
+        circle_marker_125559b768faf51afa044610727b846c.bindPopup(popup_ceadbad3994b55e4753cacb310b61448)
+        ;
+
+        
+    
+    
+            circle_marker_125559b768faf51afa044610727b846c.bindTooltip(
+                `<div>
+                     22030 - Fairfax
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09cc05e4b2d9812b47628176af93c791 = L.circleMarker(
+                [38.84, -77.095],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.69333333333333, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_fd82fdb842f04b17bdf4667c8862e930 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b50f380a40fe75e638de689b5daf51b5 = $(`<div id="html_b50f380a40fe75e638de689b5daf51b5" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22150</b><br>Area: Springfield<br>60+ Population: 4,000<br>Disability: 1,760<br>Market Score: 3104<br>Priority: High<br>Median Income: $88,000<br>Housing: Suburban</div>`)[0];
+                popup_fd82fdb842f04b17bdf4667c8862e930.setContent(html_b50f380a40fe75e638de689b5daf51b5);
+            
+        
+
+        circle_marker_09cc05e4b2d9812b47628176af93c791.bindPopup(popup_fd82fdb842f04b17bdf4667c8862e930)
+        ;
+
+        
+    
+    
+            circle_marker_09cc05e4b2d9812b47628176af93c791.bindTooltip(
+                `<div>
+                     22150 - Springfield
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_414c9d6db2cbf4497733550f9e96a5b2 = L.circleMarker(
+                [38.877, -77.1211],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.16, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_41dde3cbaad62799260b6c38ddc07dd9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a463bb733eed5c8dcd7b52c9550865f = $(`<div id="html_6a463bb733eed5c8dcd7b52c9550865f" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22043</b><br>Area: Falls Church<br>60+ Population: 3,900<br>Disability: 1,710<br>Market Score: 3024<br>Priority: High<br>Median Income: $110,000<br>Housing: Dense suburban</div>`)[0];
+                popup_41dde3cbaad62799260b6c38ddc07dd9.setContent(html_6a463bb733eed5c8dcd7b52c9550865f);
+            
+        
+
+        circle_marker_414c9d6db2cbf4497733550f9e96a5b2.bindPopup(popup_41dde3cbaad62799260b6c38ddc07dd9)
+        ;
+
+        
+    
+    
+            circle_marker_414c9d6db2cbf4497733550f9e96a5b2.bindTooltip(
+                `<div>
+                     22043 - Falls Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_001e43391ae33e95f46bf67872886bf0 = L.circleMarker(
+                [39.0332, -77.2872],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.653333333333332, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_62350f7f4c885b64831975912486b01a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00bece39896d9d3a2dbd382018cd3616 = $(`<div id="html_00bece39896d9d3a2dbd382018cd3616" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22031</b><br>Area: Fairfax<br>60+ Population: 3,800<br>Disability: 1,670<br>Market Score: 2948<br>Priority: Medium<br>Median Income: $88,000<br>Housing: Suburban</div>`)[0];
+                popup_62350f7f4c885b64831975912486b01a.setContent(html_00bece39896d9d3a2dbd382018cd3616);
+            
+        
+
+        circle_marker_001e43391ae33e95f46bf67872886bf0.bindPopup(popup_62350f7f4c885b64831975912486b01a)
+        ;
+
+        
+    
+    
+            circle_marker_001e43391ae33e95f46bf67872886bf0.bindTooltip(
+                `<div>
+                     22031 - Fairfax
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c38579557a9d59429853fc11b1bafef6 = L.circleMarker(
+                [38.704, -77.2111],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.613333333333333, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_2589f470b94d76ed9711cf88c8e1094e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5686b71f9ec7d84260a6968eeefe001 = $(`<div id="html_a5686b71f9ec7d84260a6968eeefe001" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22081</b><br>Area: Merrifield<br>60+ Population: 3,600<br>Disability: 1,580<br>Market Score: 2792<br>Priority: Medium<br>Median Income: $95,000<br>Housing: Urban</div>`)[0];
+                popup_2589f470b94d76ed9711cf88c8e1094e.setContent(html_a5686b71f9ec7d84260a6968eeefe001);
+            
+        
+
+        circle_marker_c38579557a9d59429853fc11b1bafef6.bindPopup(popup_2589f470b94d76ed9711cf88c8e1094e)
+        ;
+
+        
+    
+    
+            circle_marker_c38579557a9d59429853fc11b1bafef6.bindTooltip(
+                `<div>
+                     22081 - Merrifield
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d87c0ae70f1529818ccb5022dc95203 = L.circleMarker(
+                [38.8845, -77.24],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.106666666666666, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_41973d51b7c5f9793b0727ce73cb228d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_561f1208b29fcd2234f29a1e6df53ee6 = $(`<div id="html_561f1208b29fcd2234f29a1e6df53ee6" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22151</b><br>Area: Springfield<br>60+ Population: 3,500<br>Disability: 1,540<br>Market Score: 2716<br>Priority: Medium<br>Median Income: $82,000<br>Housing: Suburban</div>`)[0];
+                popup_41973d51b7c5f9793b0727ce73cb228d.setContent(html_561f1208b29fcd2234f29a1e6df53ee6);
+            
+        
+
+        circle_marker_8d87c0ae70f1529818ccb5022dc95203.bindPopup(popup_41973d51b7c5f9793b0727ce73cb228d)
+        ;
+
+        
+    
+    
+            circle_marker_8d87c0ae70f1529818ccb5022dc95203.bindTooltip(
+                `<div>
+                     22151 - Springfield
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1506d656242e459a43f053d4e043a324 = L.circleMarker(
+                [38.9339, -77.1784],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.106666666666666, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_93a63a592308252e6b07b6a166d75f25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a5aacb26c719ba44b2ff20d5c5170b9 = $(`<div id="html_0a5aacb26c719ba44b2ff20d5c5170b9" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22039</b><br>Area: Fairfax Station<br>60+ Population: 3,500<br>Disability: 1,540<br>Market Score: 2716<br>Priority: Medium<br>Median Income: $125,000<br>Housing: Rural/Estate</div>`)[0];
+                popup_93a63a592308252e6b07b6a166d75f25.setContent(html_0a5aacb26c719ba44b2ff20d5c5170b9);
+            
+        
+
+        circle_marker_1506d656242e459a43f053d4e043a324.bindPopup(popup_93a63a592308252e6b07b6a166d75f25)
+        ;
+
+        
+    
+    
+            circle_marker_1506d656242e459a43f053d4e043a324.bindTooltip(
+                `<div>
+                     22039 - Fairfax Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_083356713c4d007d04aac139e0b8be9c = L.circleMarker(
+                [38.95, -77.23],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.573333333333334, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_a2d505e3cfe6530577971c56c5a35005 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d2f4492d052f7d3d5953593e7bc79f0 = $(`<div id="html_4d2f4492d052f7d3d5953593e7bc79f0" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22191</b><br>Area: Woodbridge<br>60+ Population: 3,400<br>Disability: 1,490<br>Market Score: 2636<br>Priority: Medium<br>Median Income: $75,000<br>Housing: Working class</div>`)[0];
+                popup_a2d505e3cfe6530577971c56c5a35005.setContent(html_4d2f4492d052f7d3d5953593e7bc79f0);
+            
+        
+
+        circle_marker_083356713c4d007d04aac139e0b8be9c.bindPopup(popup_a2d505e3cfe6530577971c56c5a35005)
+        ;
+
+        
+    
+    
+            circle_marker_083356713c4d007d04aac139e0b8be9c.bindTooltip(
+                `<div>
+                     22191 - Woodbridge
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57d2ad66c561bdfb23ba8c2de098cb4c = L.circleMarker(
+                [38.88, -77.295],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.066666666666666, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_e1e2b31779ef9465072849edfbe438fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbd5251dfc9c89b4ce1e8c52e0fc07d0 = $(`<div id="html_bbd5251dfc9c89b4ce1e8c52e0fc07d0" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22152</b><br>Area: Springfield<br>60+ Population: 3,300<br>Disability: 1,450<br>Market Score: 2560<br>Priority: Medium<br>Median Income: $76,000<br>Housing: Suburban</div>`)[0];
+                popup_e1e2b31779ef9465072849edfbe438fc.setContent(html_bbd5251dfc9c89b4ce1e8c52e0fc07d0);
+            
+        
+
+        circle_marker_57d2ad66c561bdfb23ba8c2de098cb4c.bindPopup(popup_e1e2b31779ef9465072849edfbe438fc)
+        ;
+
+        
+    
+    
+            circle_marker_57d2ad66c561bdfb23ba8c2de098cb4c.bindTooltip(
+                `<div>
+                     22152 - Springfield
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e54c2811e5b7e36818ba21f61c56cb8d = L.circleMarker(
+                [38.7733, -77.21],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.066666666666666, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_b828461a99abd6ef8b39f9fd658c09ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa4199d9071f2d243a1de9b3dbb2e1b7 = $(`<div id="html_aa4199d9071f2d243a1de9b3dbb2e1b7" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22079</b><br>Area: Lorton<br>60+ Population: 3,300<br>Disability: 1,450<br>Market Score: 2560<br>Priority: Medium<br>Median Income: $85,000<br>Housing: Suburban</div>`)[0];
+                popup_b828461a99abd6ef8b39f9fd658c09ef.setContent(html_aa4199d9071f2d243a1de9b3dbb2e1b7);
+            
+        
+
+        circle_marker_e54c2811e5b7e36818ba21f61c56cb8d.bindPopup(popup_b828461a99abd6ef8b39f9fd658c09ef)
+        ;
+
+        
+    
+    
+            circle_marker_e54c2811e5b7e36818ba21f61c56cb8d.bindTooltip(
+                `<div>
+                     22079 - Lorton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e9466c4bf174ac8d6552b202d4330d4 = L.circleMarker(
+                [38.7891, -77.17],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.533333333333335, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_f1f345137dcdd5bb91cca18a6e2c5aa9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a59dae7896fbf4d7761ae5f156dad81f = $(`<div id="html_a59dae7896fbf4d7761ae5f156dad81f" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22015</b><br>Area: Burke<br>60+ Population: 3,200<br>Disability: 1,400<br>Market Score: 2480<br>Priority: Medium<br>Median Income: $105,000<br>Housing: Suburban</div>`)[0];
+                popup_f1f345137dcdd5bb91cca18a6e2c5aa9.setContent(html_a59dae7896fbf4d7761ae5f156dad81f);
+            
+        
+
+        circle_marker_5e9466c4bf174ac8d6552b202d4330d4.bindPopup(popup_f1f345137dcdd5bb91cca18a6e2c5aa9)
+        ;
+
+        
+    
+    
+            circle_marker_5e9466c4bf174ac8d6552b202d4330d4.bindTooltip(
+                `<div>
+                     22015 - Burke
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a57d7c7bd686158cb389918613192f76 = L.circleMarker(
+                [38.755, -77.19],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.533333333333335, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_39afafe191f40a44112f7f054b214be3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a9835da5a6c2cfcfaf2b2bf25e25eca = $(`<div id="html_6a9835da5a6c2cfcfaf2b2bf25e25eca" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22156</b><br>Area: Springfield<br>60+ Population: 3,200<br>Disability: 1,400<br>Market Score: 2480<br>Priority: Medium<br>Median Income: $80,000<br>Housing: Suburban</div>`)[0];
+                popup_39afafe191f40a44112f7f054b214be3.setContent(html_6a9835da5a6c2cfcfaf2b2bf25e25eca);
+            
+        
+
+        circle_marker_a57d7c7bd686158cb389918613192f76.bindPopup(popup_39afafe191f40a44112f7f054b214be3)
+        ;
+
+        
+    
+    
+            circle_marker_a57d7c7bd686158cb389918613192f76.bindTooltip(
+                `<div>
+                     22156 - Springfield
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_387b416d1497b5295896ce1867fd37a1 = L.circleMarker(
+                [38.74, -77.22],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.026666666666667, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_33ce26cb1d6aa92a99feacad8a8960f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a43de155e99af8d77322742c48a5db4 = $(`<div id="html_5a43de155e99af8d77322742c48a5db4" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22044</b><br>Area: Falls Church<br>60+ Population: 3,100<br>Disability: 1,360<br>Market Score: 2404<br>Priority: Medium<br>Median Income: $92,000<br>Housing: Urban</div>`)[0];
+                popup_33ce26cb1d6aa92a99feacad8a8960f7.setContent(html_5a43de155e99af8d77322742c48a5db4);
+            
+        
+
+        circle_marker_387b416d1497b5295896ce1867fd37a1.bindPopup(popup_33ce26cb1d6aa92a99feacad8a8960f7)
+        ;
+
+        
+    
+    
+            circle_marker_387b416d1497b5295896ce1867fd37a1.bindTooltip(
+                `<div>
+                     22044 - Falls Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9376dbbcf771fdcc0b85c05fbc2bf1f9 = L.circleMarker(
+                [38.7622, -77.185],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.026666666666667, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_c8da78f1bb2bc5bdd6ae34166afd76a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_461ebbacda99309ad576b82a26be4a6e = $(`<div id="html_461ebbacda99309ad576b82a26be4a6e" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22192</b><br>Area: Woodbridge<br>60+ Population: 3,100<br>Disability: 1,360<br>Market Score: 2404<br>Priority: Medium<br>Median Income: $68,000<br>Housing: Working class</div>`)[0];
+                popup_c8da78f1bb2bc5bdd6ae34166afd76a3.setContent(html_461ebbacda99309ad576b82a26be4a6e);
+            
+        
+
+        circle_marker_9376dbbcf771fdcc0b85c05fbc2bf1f9.bindPopup(popup_c8da78f1bb2bc5bdd6ae34166afd76a3)
+        ;
+
+        
+    
+    
+            circle_marker_9376dbbcf771fdcc0b85c05fbc2bf1f9.bindTooltip(
+                `<div>
+                     22192 - Woodbridge
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f14b78b3dc568d83e66eee2aa33af59b = L.circleMarker(
+                [38.9012, -77.2653],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.986666666666666, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_a5bc326aaa05ed35ddd4d96b5c19c3fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9943f24c83c37f2ae22ffb4dd5aa7028 = $(`<div id="html_9943f24c83c37f2ae22ffb4dd5aa7028" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22032</b><br>Area: Fairfax<br>60+ Population: 2,900<br>Disability: 1,270<br>Market Score: 2248<br>Priority: Medium<br>Median Income: $75,000<br>Housing: Suburban</div>`)[0];
+                popup_a5bc326aaa05ed35ddd4d96b5c19c3fa.setContent(html_9943f24c83c37f2ae22ffb4dd5aa7028);
+            
+        
+
+        circle_marker_f14b78b3dc568d83e66eee2aa33af59b.bindPopup(popup_a5bc326aaa05ed35ddd4d96b5c19c3fa)
+        ;
+
+        
+    
+    
+            circle_marker_f14b78b3dc568d83e66eee2aa33af59b.bindTooltip(
+                `<div>
+                     22032 - Fairfax
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7843a0794519080da1d44c74660a26e = L.circleMarker(
+                [38.9236, -77.2272],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.48, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_35f5c07795d8e9165be025c827477914 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7bc29546c151365c1eb5692673a4b22 = $(`<div id="html_b7bc29546c151365c1eb5692673a4b22" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22066</b><br>Area: Great Falls<br>60+ Population: 2,800<br>Disability: 1,230<br>Market Score: 2172<br>Priority: Medium<br>Median Income: $160,000<br>Housing: Rural/Estate</div>`)[0];
+                popup_35f5c07795d8e9165be025c827477914.setContent(html_b7bc29546c151365c1eb5692673a4b22);
+            
+        
+
+        circle_marker_c7843a0794519080da1d44c74660a26e.bindPopup(popup_35f5c07795d8e9165be025c827477914)
+        ;
+
+        
+    
+    
+            circle_marker_c7843a0794519080da1d44c74660a26e.bindTooltip(
+                `<div>
+                     22066 - Great Falls
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e3482132299d495f181039c9e742b7a3 = L.circleMarker(
+                [38.9456, -77.27],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.48, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_fafa09302567d042ae8afc6266b8dd17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fab6d2812d60e2a806de03daa0a5c8a = $(`<div id="html_1fab6d2812d60e2a806de03daa0a5c8a" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22153</b><br>Area: Springfield<br>60+ Population: 2,800<br>Disability: 1,230<br>Market Score: 2172<br>Priority: Medium<br>Median Income: $70,000<br>Housing: Working class</div>`)[0];
+                popup_fafa09302567d042ae8afc6266b8dd17.setContent(html_1fab6d2812d60e2a806de03daa0a5c8a);
+            
+        
+
+        circle_marker_e3482132299d495f181039c9e742b7a3.bindPopup(popup_fafa09302567d042ae8afc6266b8dd17)
+        ;
+
+        
+    
+    
+            circle_marker_e3482132299d495f181039c9e742b7a3.bindTooltip(
+                `<div>
+                     22153 - Springfield
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a37889d72f488666a834a94f84f5c97 = L.circleMarker(
+                [38.5908, -77.2758],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.973333333333333, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_d43cbcb75fc467a25398b0d376121a0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da316cc1b8587e11ad236d4b51ffaf00 = $(`<div id="html_da316cc1b8587e11ad236d4b51ffaf00" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22193</b><br>Area: Woodbridge<br>60+ Population: 2,700<br>Disability: 1,190<br>Market Score: 2096<br>Priority: Medium<br>Median Income: $65,000<br>Housing: Working class</div>`)[0];
+                popup_d43cbcb75fc467a25398b0d376121a0c.setContent(html_da316cc1b8587e11ad236d4b51ffaf00);
+            
+        
+
+        circle_marker_6a37889d72f488666a834a94f84f5c97.bindPopup(popup_d43cbcb75fc467a25398b0d376121a0c)
+        ;
+
+        
+    
+    
+            circle_marker_6a37889d72f488666a834a94f84f5c97.bindTooltip(
+                `<div>
+                     22193 - Woodbridge
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4bc45e8b58ba7d577dc96cb7959eaf41 = L.circleMarker(
+                [38.6387, -77.315],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.933333333333334, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_93a4cd85e0d125545dd092e104dfac98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1a7294c33cbef33ce3b3f5525067424 = $(`<div id="html_b1a7294c33cbef33ce3b3f5525067424" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22194</b><br>Area: Woodbridge<br>60+ Population: 2,500<br>Disability: 1,100<br>Market Score: 1940<br>Priority: Low<br>Median Income: $62,000<br>Housing: Working class</div>`)[0];
+                popup_93a4cd85e0d125545dd092e104dfac98.setContent(html_b1a7294c33cbef33ce3b3f5525067424);
+            
+        
+
+        circle_marker_4bc45e8b58ba7d577dc96cb7959eaf41.bindPopup(popup_93a4cd85e0d125545dd092e104dfac98)
+        ;
+
+        
+    
+    
+            circle_marker_4bc45e8b58ba7d577dc96cb7959eaf41.bindTooltip(
+                `<div>
+                     22194 - Woodbridge
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2247065b4f60456767b40c042bdb53d = L.circleMarker(
+                [38.61, -77.3],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.4, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_c24404540b50a434a23ef82c7643f3ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc4f53222ab94e8bc8b588c71e5a8579 = $(`<div id="html_fc4f53222ab94e8bc8b588c71e5a8579" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22033</b><br>Area: Fairfax<br>60+ Population: 2,400<br>Disability: 1,050<br>Market Score: 1860<br>Priority: Low<br>Median Income: $72,000<br>Housing: Suburban</div>`)[0];
+                popup_c24404540b50a434a23ef82c7643f3ea.setContent(html_fc4f53222ab94e8bc8b588c71e5a8579);
+            
+        
+
+        circle_marker_c2247065b4f60456767b40c042bdb53d.bindPopup(popup_c24404540b50a434a23ef82c7643f3ea)
+        ;
+
+        
+    
+    
+            circle_marker_c2247065b4f60456767b40c042bdb53d.bindTooltip(
+                `<div>
+                     22033 - Fairfax
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_13845d8846fa5f40092fbb00d0b0dddc = L.circleMarker(
+                [38.625, -77.29],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.853333333333333, "stroke": true, "weight": 2}
+            ).addTo(map_9bc2345347f143212f243aedd9676f40);
+        
+    
+        var popup_33a0e3119a8a43370ece50966b3e2dcd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c024d7518f4c97e06f8cf7d9a83d80bd = $(`<div id="html_c024d7518f4c97e06f8cf7d9a83d80bd" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22027</b><br>Area: Dunn Loring<br>60+ Population: 2,100<br>Disability: 920<br>Market Score: 1628<br>Priority: Low<br>Median Income: $95,000<br>Housing: Suburban</div>`)[0];
+                popup_33a0e3119a8a43370ece50966b3e2dcd.setContent(html_c024d7518f4c97e06f8cf7d9a83d80bd);
+            
+        
+
+        circle_marker_13845d8846fa5f40092fbb00d0b0dddc.bindPopup(popup_33a0e3119a8a43370ece50966b3e2dcd)
+        ;
+
+        
+    
+    
+            circle_marker_13845d8846fa5f40092fbb00d0b0dddc.bindTooltip(
+                `<div>
+                     22027 - Dunn Loring
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

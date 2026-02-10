@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0ea6cd982e72cc97d013275e3a7569f4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0ea6cd982e72cc97d013275e3a7569f4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0ea6cd982e72cc97d013275e3a7569f4 = L.map(
+                "map_0ea6cd982e72cc97d013275e3a7569f4",
+                {
+                    center: [37.5, -79.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b52ceaf2947abb203b67cc3cdd377722 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b52ceaf2947abb203b67cc3cdd377722.addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+            var circle_marker_76d46dc1b6d5cb6156c2032d55c658f6 = L.circleMarker(
+                [38.9339, -77.1784],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.2, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_c52120f9a6d283c7bb743a7a6cab154e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2fc1cbe07f7074064916c92c6ed75a4 = $(`<div id="html_e2fc1cbe07f7074064916c92c6ed75a4" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22101</b><br>City: McLean<br>County: Fairfax<br>60+ Population: 5,800<br>Priority: Critical</div>`)[0];
+                popup_c52120f9a6d283c7bb743a7a6cab154e.setContent(html_e2fc1cbe07f7074064916c92c6ed75a4);
+            
+        
+
+        circle_marker_76d46dc1b6d5cb6156c2032d55c658f6.bindPopup(popup_c52120f9a6d283c7bb743a7a6cab154e)
+        ;
+
+        
+    
+    
+            circle_marker_76d46dc1b6d5cb6156c2032d55c658f6.bindTooltip(
+                `<div>
+                     22101 - McLean
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c87c2f80cd5a0168637bef5013bf1873 = L.circleMarker(
+                [38.9012, -77.2653],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.8, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_58e03146cad70584038e80dfa76ffb39 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34f8377cc021ebf68ab1f734f9979abc = $(`<div id="html_34f8377cc021ebf68ab1f734f9979abc" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22180</b><br>City: Vienna<br>County: Fairfax<br>60+ Population: 5,200<br>Priority: Critical</div>`)[0];
+                popup_58e03146cad70584038e80dfa76ffb39.setContent(html_34f8377cc021ebf68ab1f734f9979abc);
+            
+        
+
+        circle_marker_c87c2f80cd5a0168637bef5013bf1873.bindPopup(popup_58e03146cad70584038e80dfa76ffb39)
+        ;
+
+        
+    
+    
+            circle_marker_c87c2f80cd5a0168637bef5013bf1873.bindTooltip(
+                `<div>
+                     22180 - Vienna
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7b21f715ca578d441ee903ed32f2617 = L.circleMarker(
+                [38.877, -77.1211],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.2, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_efeb7112a4329f82a9e464508419180a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8f299f5c73e764aef1ee041181bcfd6 = $(`<div id="html_c8f299f5c73e764aef1ee041181bcfd6" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22046</b><br>City: Falls Church<br>County: Fairfax<br>60+ Population: 4,800<br>Priority: Critical</div>`)[0];
+                popup_efeb7112a4329f82a9e464508419180a.setContent(html_c8f299f5c73e764aef1ee041181bcfd6);
+            
+        
+
+        circle_marker_f7b21f715ca578d441ee903ed32f2617.bindPopup(popup_efeb7112a4329f82a9e464508419180a)
+        ;
+
+        
+    
+    
+            circle_marker_f7b21f715ca578d441ee903ed32f2617.bindTooltip(
+                `<div>
+                     22046 - Falls Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9769c010afac36885441416235a3a40c = L.circleMarker(
+                [37.59, -77.49],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.8, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_e19a29ccd415cb0f80470982290356a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef650ae263bade7e686dd6b314eb83f2 = $(`<div id="html_ef650ae263bade7e686dd6b314eb83f2" style="width: 100.0%; height: 100.0%;"><b>ZIP: 23228</b><br>City: Richmond<br>County: Richmond City<br>60+ Population: 4,200<br>Priority: High</div>`)[0];
+                popup_e19a29ccd415cb0f80470982290356a0.setContent(html_ef650ae263bade7e686dd6b314eb83f2);
+            
+        
+
+        circle_marker_9769c010afac36885441416235a3a40c.bindPopup(popup_e19a29ccd415cb0f80470982290356a0)
+        ;
+
+        
+    
+    
+            circle_marker_9769c010afac36885441416235a3a40c.bindTooltip(
+                `<div>
+                     23228 - Richmond
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f3b13a21f4418aa5d2d824e81a57e46 = L.circleMarker(
+                [37.61, -77.43],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.6, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_2716157c932d81a3ce4ff6009ef7e1ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4fae5498861df67ca670bf0c78f8c37c = $(`<div id="html_4fae5498861df67ca670bf0c78f8c37c" style="width: 100.0%; height: 100.0%;"><b>ZIP: 23294</b><br>City: Richmond<br>County: Henrico<br>60+ Population: 3,900<br>Priority: High</div>`)[0];
+                popup_2716157c932d81a3ce4ff6009ef7e1ce.setContent(html_4fae5498861df67ca670bf0c78f8c37c);
+            
+        
+
+        circle_marker_2f3b13a21f4418aa5d2d824e81a57e46.bindPopup(popup_2716157c932d81a3ce4ff6009ef7e1ce)
+        ;
+
+        
+    
+    
+            circle_marker_2f3b13a21f4418aa5d2d824e81a57e46.bindTooltip(
+                `<div>
+                     23294 - Richmond
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42d41d202d68122fb83c6723acf1cca0 = L.circleMarker(
+                [37.65, -77.5],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.4, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_1f4c05e0c5d2939adbd49363a1a7a137 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ce304c1c3f447260f4bb5de269b666c = $(`<div id="html_9ce304c1c3f447260f4bb5de269b666c" style="width: 100.0%; height: 100.0%;"><b>ZIP: 23060</b><br>City: Glen Allen<br>County: Henrico<br>60+ Population: 3,600<br>Priority: High</div>`)[0];
+                popup_1f4c05e0c5d2939adbd49363a1a7a137.setContent(html_9ce304c1c3f447260f4bb5de269b666c);
+            
+        
+
+        circle_marker_42d41d202d68122fb83c6723acf1cca0.bindPopup(popup_1f4c05e0c5d2939adbd49363a1a7a137)
+        ;
+
+        
+    
+    
+            circle_marker_42d41d202d68122fb83c6723acf1cca0.bindTooltip(
+                `<div>
+                     23060 - Glen Allen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_96c096344a6242ba3dc5d955907d8189 = L.circleMarker(
+                [36.7682, -76.2875],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.4, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_996a5440127f5cca78d9b10492decef8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3d40317a2a2537b59013d8f3da1aea7 = $(`<div id="html_c3d40317a2a2537b59013d8f3da1aea7" style="width: 100.0%; height: 100.0%;"><b>ZIP: 23320</b><br>City: Chesapeake<br>County: Chesapeake<br>60+ Population: 4,100<br>Priority: High</div>`)[0];
+                popup_996a5440127f5cca78d9b10492decef8.setContent(html_c3d40317a2a2537b59013d8f3da1aea7);
+            
+        
+
+        circle_marker_96c096344a6242ba3dc5d955907d8189.bindPopup(popup_996a5440127f5cca78d9b10492decef8)
+        ;
+
+        
+    
+    
+            circle_marker_96c096344a6242ba3dc5d955907d8189.bindTooltip(
+                `<div>
+                     23320 - Chesapeake
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_28275aef6c1459690d5715e1b0c1d49b = L.circleMarker(
+                [36.8529, -75.978],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.2, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_7a720ace7e95f5ae5d949b5ddae5755a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d85036a0d864faf88d4914468d7cb352 = $(`<div id="html_d85036a0d864faf88d4914468d7cb352" style="width: 100.0%; height: 100.0%;"><b>ZIP: 23451</b><br>City: Virginia Beach<br>County: Virginia Beach<br>60+ Population: 5,300<br>Priority: Critical</div>`)[0];
+                popup_7a720ace7e95f5ae5d949b5ddae5755a.setContent(html_d85036a0d864faf88d4914468d7cb352);
+            
+        
+
+        circle_marker_28275aef6c1459690d5715e1b0c1d49b.bindPopup(popup_7a720ace7e95f5ae5d949b5ddae5755a)
+        ;
+
+        
+    
+    
+            circle_marker_28275aef6c1459690d5715e1b0c1d49b.bindTooltip(
+                `<div>
+                     23451 - Virginia Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2262ba1bff18542c731dd83e6f0c6e4b = L.circleMarker(
+                [38.8938, -77.4311],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.6, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_8afaeb60362bc986d02096ea41673244 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90fbd7ed8e32126691f1a632a11cfda0 = $(`<div id="html_90fbd7ed8e32126691f1a632a11cfda0" style="width: 100.0%; height: 100.0%;"><b>ZIP: 20151</b><br>City: Chantilly<br>County: Loudoun<br>60+ Population: 3,400<br>Priority: High</div>`)[0];
+                popup_8afaeb60362bc986d02096ea41673244.setContent(html_90fbd7ed8e32126691f1a632a11cfda0);
+            
+        
+
+        circle_marker_2262ba1bff18542c731dd83e6f0c6e4b.bindPopup(popup_8afaeb60362bc986d02096ea41673244)
+        ;
+
+        
+    
+    
+            circle_marker_2262ba1bff18542c731dd83e6f0c6e4b.bindTooltip(
+                `<div>
+                     20151 - Chantilly
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_afbe87326816ad7cce82bc6369618f64 = L.circleMarker(
+                [39.0438, -77.4875],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.2, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_630eb2d1a6fea2d7d4ea3a844a77e82c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4339524afe307fd88c92d6d4f99b0c4c = $(`<div id="html_4339524afe307fd88c92d6d4f99b0c4c" style="width: 100.0%; height: 100.0%;"><b>ZIP: 20147</b><br>City: Ashburn<br>County: Loudoun<br>60+ Population: 3,800<br>Priority: High</div>`)[0];
+                popup_630eb2d1a6fea2d7d4ea3a844a77e82c.setContent(html_4339524afe307fd88c92d6d4f99b0c4c);
+            
+        
+
+        circle_marker_afbe87326816ad7cce82bc6369618f64.bindPopup(popup_630eb2d1a6fea2d7d4ea3a844a77e82c)
+        ;
+
+        
+    
+    
+            circle_marker_afbe87326816ad7cce82bc6369618f64.bindTooltip(
+                `<div>
+                     20147 - Ashburn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a6b43ebc68439a47e9014d29ad29a90 = L.circleMarker(
+                [38.0293, -78.4767],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.8, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_c48aafcbffde9e8356f5260341758297 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09348cee3d9f454916b4efaee65663ad = $(`<div id="html_09348cee3d9f454916b4efaee65663ad" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22901</b><br>City: Charlottesville<br>County: Charlottesville<br>60+ Population: 3,200<br>Priority: Medium</div>`)[0];
+                popup_c48aafcbffde9e8356f5260341758297.setContent(html_09348cee3d9f454916b4efaee65663ad);
+            
+        
+
+        circle_marker_4a6b43ebc68439a47e9014d29ad29a90.bindPopup(popup_c48aafcbffde9e8356f5260341758297)
+        ;
+
+        
+    
+    
+            circle_marker_4a6b43ebc68439a47e9014d29ad29a90.bindTooltip(
+                `<div>
+                     22901 - Charlottesville
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d0660849923297138a7d1c89f8c4898 = L.circleMarker(
+                [38.0336, -78.508],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.6, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_6c2de25f3f424c877d8f0123f56c9f26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b9648c1c422597ceb7502608d8a60b5 = $(`<div id="html_2b9648c1c422597ceb7502608d8a60b5" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22902</b><br>City: Charlottesville<br>County: Charlottesville<br>60+ Population: 2,900<br>Priority: Medium</div>`)[0];
+                popup_6c2de25f3f424c877d8f0123f56c9f26.setContent(html_2b9648c1c422597ceb7502608d8a60b5);
+            
+        
+
+        circle_marker_6d0660849923297138a7d1c89f8c4898.bindPopup(popup_6c2de25f3f424c877d8f0123f56c9f26)
+        ;
+
+        
+    
+    
+            circle_marker_6d0660849923297138a7d1c89f8c4898.bindTooltip(
+                `<div>
+                     22902 - Charlottesville
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e1aba411b775d054eb93e9a62fec03b6 = L.circleMarker(
+                [37.271, -79.9414],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.0, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_a91061d6c46b591ff28d92d581a76a7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6492b2e9e9f640c5544047710813a60 = $(`<div id="html_e6492b2e9e9f640c5544047710813a60" style="width: 100.0%; height: 100.0%;"><b>ZIP: 24019</b><br>City: Roanoke<br>County: Roanoke<br>60+ Population: 4,500<br>Priority: High</div>`)[0];
+                popup_a91061d6c46b591ff28d92d581a76a7d.setContent(html_e6492b2e9e9f640c5544047710813a60);
+            
+        
+
+        circle_marker_e1aba411b775d054eb93e9a62fec03b6.bindPopup(popup_a91061d6c46b591ff28d92d581a76a7d)
+        ;
+
+        
+    
+    
+            circle_marker_e1aba411b775d054eb93e9a62fec03b6.bindTooltip(
+                `<div>
+                     24019 - Roanoke
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1607ecb4d8f5d7765466c4585976754a = L.circleMarker(
+                [37.32, -79.97],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.2, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_e87a6e7d6078f72b9a0b29fd484b9509 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52ad2e4f5dfa23a5ab6fa3e8fcf337cc = $(`<div id="html_52ad2e4f5dfa23a5ab6fa3e8fcf337cc" style="width: 100.0%; height: 100.0%;"><b>ZIP: 24012</b><br>City: Roanoke<br>County: Roanoke<br>60+ Population: 3,800<br>Priority: High</div>`)[0];
+                popup_e87a6e7d6078f72b9a0b29fd484b9509.setContent(html_52ad2e4f5dfa23a5ab6fa3e8fcf337cc);
+            
+        
+
+        circle_marker_1607ecb4d8f5d7765466c4585976754a.bindPopup(popup_e87a6e7d6078f72b9a0b29fd484b9509)
+        ;
+
+        
+    
+    
+            circle_marker_1607ecb4d8f5d7765466c4585976754a.bindTooltip(
+                `<div>
+                     24012 - Roanoke
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fce4fc280df37c6365fab15adbc73c98 = L.circleMarker(
+                [38.4496, -78.8689],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.2, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_9ce6843754ca78c220e6f278502ef0e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e563393f27a8f84c5fb0d1d2a4a3a05c = $(`<div id="html_e563393f27a8f84c5fb0d1d2a4a3a05c" style="width: 100.0%; height: 100.0%;"><b>ZIP: 22801</b><br>City: Harrisonburg<br>County: Harrisonburg<br>60+ Population: 2,800<br>Priority: Medium</div>`)[0];
+                popup_9ce6843754ca78c220e6f278502ef0e7.setContent(html_e563393f27a8f84c5fb0d1d2a4a3a05c);
+            
+        
+
+        circle_marker_fce4fc280df37c6365fab15adbc73c98.bindPopup(popup_9ce6843754ca78c220e6f278502ef0e7)
+        ;
+
+        
+    
+    
+            circle_marker_fce4fc280df37c6365fab15adbc73c98.bindTooltip(
+                `<div>
+                     22801 - Harrisonburg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7f5828b7de7e02cf0e8e3d3c6407cd7 = L.circleMarker(
+                [37.2707, -76.7075],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.4, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_dfa1132c27f0d0c92ef195844f59eed2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96109981b2c18b77b3ed38fb4d675956 = $(`<div id="html_96109981b2c18b77b3ed38fb4d675956" style="width: 100.0%; height: 100.0%;"><b>ZIP: 23185</b><br>City: Williamsburg<br>County: Williamsburg<br>60+ Population: 2,600<br>Priority: Medium</div>`)[0];
+                popup_dfa1132c27f0d0c92ef195844f59eed2.setContent(html_96109981b2c18b77b3ed38fb4d675956);
+            
+        
+
+        circle_marker_d7f5828b7de7e02cf0e8e3d3c6407cd7.bindPopup(popup_dfa1132c27f0d0c92ef195844f59eed2)
+        ;
+
+        
+    
+    
+            circle_marker_d7f5828b7de7e02cf0e8e3d3c6407cd7.bindTooltip(
+                `<div>
+                     23185 - Williamsburg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ff03ac27ab74638d5cb8f529c3dee92 = L.circleMarker(
+                [37.0299, -76.3452],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.6, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_7aa8899ddc005bc064216ccb89028cdc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee9147ad0dbd2905d3de2bb2206a429a = $(`<div id="html_ee9147ad0dbd2905d3de2bb2206a429a" style="width: 100.0%; height: 100.0%;"><b>ZIP: 23666</b><br>City: Hampton<br>County: Hampton<br>60+ Population: 3,900<br>Priority: High</div>`)[0];
+                popup_7aa8899ddc005bc064216ccb89028cdc.setContent(html_ee9147ad0dbd2905d3de2bb2206a429a);
+            
+        
+
+        circle_marker_0ff03ac27ab74638d5cb8f529c3dee92.bindPopup(popup_7aa8899ddc005bc064216ccb89028cdc)
+        ;
+
+        
+    
+    
+            circle_marker_0ff03ac27ab74638d5cb8f529c3dee92.bindTooltip(
+                `<div>
+                     23666 - Hampton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_61451a2c04e8097d63839ff430cae8a3 = L.circleMarker(
+                [36.8462, -75.9755],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.4, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_1634c576c98ada68ec59bf055c422cf4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e49cc79f772e901567c3016235e4673 = $(`<div id="html_7e49cc79f772e901567c3016235e4673" style="width: 100.0%; height: 100.0%;"><b>ZIP: 23454</b><br>City: Virginia Beach<br>County: Virginia Beach<br>60+ Population: 5,100<br>Priority: Critical</div>`)[0];
+                popup_1634c576c98ada68ec59bf055c422cf4.setContent(html_7e49cc79f772e901567c3016235e4673);
+            
+        
+
+        circle_marker_61451a2c04e8097d63839ff430cae8a3.bindPopup(popup_1634c576c98ada68ec59bf055c422cf4)
+        ;
+
+        
+    
+    
+            circle_marker_61451a2c04e8097d63839ff430cae8a3.bindTooltip(
+                `<div>
+                     23454 - Virginia Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a98541fa071f10393c75b843b3e0c57 = L.circleMarker(
+                [36.777, -76.07],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.8, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_1a24722c417f65f8d4a9a770bc38b74e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d85aabc8b9441de86ccde1f8332408d9 = $(`<div id="html_d85aabc8b9441de86ccde1f8332408d9" style="width: 100.0%; height: 100.0%;"><b>ZIP: 23464</b><br>City: Virginia Beach<br>County: Virginia Beach<br>60+ Population: 4,700<br>Priority: High</div>`)[0];
+                popup_1a24722c417f65f8d4a9a770bc38b74e.setContent(html_d85aabc8b9441de86ccde1f8332408d9);
+            
+        
+
+        circle_marker_2a98541fa071f10393c75b843b3e0c57.bindPopup(popup_1a24722c417f65f8d4a9a770bc38b74e)
+        ;
+
+        
+    
+    
+            circle_marker_2a98541fa071f10393c75b843b3e0c57.bindTooltip(
+                `<div>
+                     23464 - Virginia Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85590d23e063fbee4c6d9ba1c9b84761 = L.circleMarker(
+                [37.5138, -77.62],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.0, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_6585533e0b24799c99b2456021bac3ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a284ef8a1fc94e865609223db36e33e4 = $(`<div id="html_a284ef8a1fc94e865609223db36e33e4" style="width: 100.0%; height: 100.0%;"><b>ZIP: 23113</b><br>City: Midlothian<br>County: Chesterfield<br>60+ Population: 3,500<br>Priority: Medium</div>`)[0];
+                popup_6585533e0b24799c99b2456021bac3ba.setContent(html_a284ef8a1fc94e865609223db36e33e4);
+            
+        
+
+        circle_marker_85590d23e063fbee4c6d9ba1c9b84761.bindPopup(popup_6585533e0b24799c99b2456021bac3ba)
+        ;
+
+        
+    
+    
+            circle_marker_85590d23e063fbee4c6d9ba1c9b84761.bindTooltip(
+                `<div>
+                     23113 - Midlothian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3229cf88ebd00dde3df6f2a54120a9c = L.circleMarker(
+                [37.48, -77.65],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.2, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_8dd079ad913afbfa09d86139a087720b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e15a53d0e9362866a2bdd3f823bf870a = $(`<div id="html_e15a53d0e9362866a2bdd3f823bf870a" style="width: 100.0%; height: 100.0%;"><b>ZIP: 23114</b><br>City: Midlothian<br>County: Chesterfield<br>60+ Population: 3,300<br>Priority: Medium</div>`)[0];
+                popup_8dd079ad913afbfa09d86139a087720b.setContent(html_e15a53d0e9362866a2bdd3f823bf870a);
+            
+        
+
+        circle_marker_d3229cf88ebd00dde3df6f2a54120a9c.bindPopup(popup_8dd079ad913afbfa09d86139a087720b)
+        ;
+
+        
+    
+    
+            circle_marker_d3229cf88ebd00dde3df6f2a54120a9c.bindTooltip(
+                `<div>
+                     23114 - Midlothian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e676cc6a5ecc3d4ad8e1af3a5e66744 = L.circleMarker(
+                [37.4138, -79.1422],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.4, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_dcc95e1166234c48a980c7d69125bc6c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f3c5d0f43d16b4284159352cf20899d = $(`<div id="html_6f3c5d0f43d16b4284159352cf20899d" style="width: 100.0%; height: 100.0%;"><b>ZIP: 24501</b><br>City: Lynchburg<br>County: Lynchburg<br>60+ Population: 3,100<br>Priority: Medium</div>`)[0];
+                popup_dcc95e1166234c48a980c7d69125bc6c.setContent(html_6f3c5d0f43d16b4284159352cf20899d);
+            
+        
+
+        circle_marker_3e676cc6a5ecc3d4ad8e1af3a5e66744.bindPopup(popup_dcc95e1166234c48a980c7d69125bc6c)
+        ;
+
+        
+    
+    
+            circle_marker_3e676cc6a5ecc3d4ad8e1af3a5e66744.bindTooltip(
+                `<div>
+                     24501 - Lynchburg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae0a9e810ee7859582d5125a8211f57a = L.circleMarker(
+                [37.395, -79.16],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.6, "stroke": true, "weight": 2}
+            ).addTo(map_0ea6cd982e72cc97d013275e3a7569f4);
+        
+    
+        var popup_ee4b88d39fc42c5973765dd7d781ac58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbe7231f39fd44c55c23df8ab5abcd51 = $(`<div id="html_bbe7231f39fd44c55c23df8ab5abcd51" style="width: 100.0%; height: 100.0%;"><b>ZIP: 24502</b><br>City: Lynchburg<br>County: Lynchburg<br>60+ Population: 2,900<br>Priority: Medium</div>`)[0];
+                popup_ee4b88d39fc42c5973765dd7d781ac58.setContent(html_bbe7231f39fd44c55c23df8ab5abcd51);
+            
+        
+
+        circle_marker_ae0a9e810ee7859582d5125a8211f57a.bindPopup(popup_ee4b88d39fc42c5973765dd7d781ac58)
+        ;
+
+        
+    
+    
+            circle_marker_ae0a9e810ee7859582d5125a8211f57a.bindTooltip(
+                `<div>
+                     24502 - Lynchburg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
